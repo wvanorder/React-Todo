@@ -7,9 +7,7 @@ export const toDos = [];
     // some javascript
       return (
         <div className="thing-to-do">
-          <div className="task-info">
-            <h2 className={props.thingOnProps.completed ? 'completed' : ''} onClick={() => props.taskCompleted(props.thingOnProps.id)}>Task : {props.thingOnProps.task}</h2>
+            <h2 className={props.thingOnProps.completed ? 'completed' : ''} onClick={() => props.taskCompleted(props.thingOnProps.id)}>{props.thingOnProps.task}</h2>
           </div>
-        </div>
       );
     };

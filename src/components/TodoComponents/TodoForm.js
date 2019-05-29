@@ -8,8 +8,9 @@ const ToDoForm = props => {
                 onChange={props.taskInput}
                 value={props.task}
                 name="task"
+                required = 'Fill Me out'
                 />
-                {props.error && <p>{props.error}</p>}
+                {/* {props.error && <p>{props.error}</p>} */}
             </form>
             <button onClick={props.addTask}>Add Task</button>
             <button onClick={props.removeTasks}>Remove Tasks</button>
