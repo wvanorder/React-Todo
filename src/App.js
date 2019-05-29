@@ -64,8 +64,9 @@ removeTasks = event => {
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
-        <TodoList taskCompleted={this.taskCompleted} things = {this.state.thingsToDo}/>
+        
         <ToDoForm  error ={this.state.error} addTask={this.addTask} task={this.state.task} taskInput={this.taskInput} removeTasks={this.removeTasks}/>
+        <TodoList taskCompleted={this.taskCompleted} things = {this.state.thingsToDo}/>
       </div>
     );
   }
