@@ -63,7 +63,6 @@ addTask = event => {
 
 removeTasks = event => {
   const incompleteTasks = this.state.thingsToDo.filter(thing => thing.completed === false)
-  console.log(incompleteTasks);
   this.setState({
     thingsToDo: [...incompleteTasks]
   })
