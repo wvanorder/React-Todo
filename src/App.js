@@ -85,7 +85,7 @@ componentWillUpdate(nextProps, nextState) {
 
 searchItems = (value = this.state.search) => {
   const newArr = this.state.thingsToDo.map(item => {
-    if(item.task.includes(value)) {
+    if(item.task.toLowerCase().includes(value.toLowerCase())) {
       item.match = true;
       return item;
     }
